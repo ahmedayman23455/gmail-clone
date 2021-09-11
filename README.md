@@ -1,44 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## gmail-clone is a functional, responsive Website created with React, Redux and Firebase
 
-## Available Scripts
+**Watch the website (live demo): https://clone-c8cd7.web.app/**
 
-In the project directory, you can run:
+#### &#9881; STACK.
 
-### `npm start`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**( React & Redux )**
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- Use **Redux for state management.**
 
-### `npm test`
+- Routing with **React Router.**
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+**( Firebase & Firestore )**
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Use Firebase to build **full stack application.**
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- **Sign-In** workflow with Firebase.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Google** Authentification. 
 
-### `npm run eject`
+- **Authentication State Persistence** 
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- **Storing emails In FireStore.**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**( Material UI )**   
+- use components of material ui
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
+#### Overview & Goal. 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- **Users can log in by email of google.**
+- **Users can write a message to any person, and show in emails list of user email.**
+--- 
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+https://user-images.githubusercontent.com/57132693/132955197-62903017-fa11-41d6-95ce-23d5c70b43b9.mp4
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+#### Main Page.
+![laptop](https://user-images.githubusercontent.com/57132693/132955207-81ba5dad-4145-4bfd-a4d3-5ec548a10346.png)
+![download](https://user-images.githubusercontent.com/57132693/132955210-911c6fad-2160-4902-8680-06a35f63d058.png)
+![mobile](https://user-images.githubusercontent.com/57132693/132955214-9bb50c67-e700-43ce-8599-7c05955ff0c1.png)
+
+
+
+
+
