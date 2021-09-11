@@ -1,0 +1,48 @@
+.mailContent {
+  padding: 1em;
+  margin-top: 1em;
+}
+
+.mailContent__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mailContent__headerLeft {
+  display: flex;
+  align-items: center;
+}
+
+.mailContent__headerLeft > h2 {
+  font-weight: 400;
+}
+
+.mailContent__headerLeft > p {
+  font-size: 1.2rem;
+}
+
+.mailContent__headerLeft > * + * {
+  margin-left: 1em;
+}
+
+.mailContent__headerLeft .MuiSvgIcon-root {
+  color: var(--primary-color);
+}
+
+.mailContnet__message {
+  margin-top: 1em;
+  font-size: 1.15rem;
+  font-weight: 300;
+  line-height: 1.7;
+  overflow-wrap: break-word;
+}
+
+@media (max-width: 35em) {
+  .mailContent__header {
+    display: block;
+  }
+  .mailContent__headerLeft {
+    margin-bottom: 1em;
+  }
+}

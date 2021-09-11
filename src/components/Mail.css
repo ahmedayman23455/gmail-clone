@@ -1,0 +1,23 @@
+.mail {
+  margin-left: 2em;
+  flex: 1;
+}
+.mail__icons {
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f3f4;
+  background-color: white;
+}
+
+.mail__iconsLeft,
+.mail__iconsRight {
+  display: flex;
+  align-items: center;
+}
+
+.mail__content {
+  /* margin-top: 1.5em; */
+}

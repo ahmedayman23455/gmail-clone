@@ -1,0 +1,37 @@
+.sidebar__option {
+  display: flex;
+  align-items: center;
+  padding: 0.4em 1em 0.4em 1.2rem;
+  cursor: pointer;
+  border-top-right-radius: 100vh;
+  border-bottom-right-radius: 100vh;
+  color: var(--secondary-color);
+}
+.sidebar__option:hover {
+  background-color: #e9eaee;
+}
+
+.sidebar__option.selected,
+.sidebar__option.selected:hover {
+  background-color: var(--bg-hover-2);
+  color: var(--primary-color) !important;
+}
+
+.sidebar__title {
+  flex: 1;
+  margin: 0 0.5em;
+}
+
+@media (max-width: 50em) {
+  .sidebar__option {
+    /* display: block; */
+    width: max-content;
+    padding: 0.7em;
+    margin-bottom: 0.2em;
+    border-radius: 100vh;
+  }
+  .sidebar__title,
+  .sidebar__number {
+    display: none;
+  }
+}

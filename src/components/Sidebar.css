@@ -1,0 +1,64 @@
+.sidebar {
+  display: flex;
+  flex-basis: 210px;
+  flex-shrink: 0;
+  flex-direction: column;
+  margin-top: 1em;
+}
+
+.sidebar__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__composeBtn {
+  padding: 0.8em !important;
+  border-radius: 100vh !important;
+  margin-left: 1em !important;
+  margin-bottom: 1em !important;
+  border-radius: 100vh;
+  font-size: 0.875rem;
+  background-color: #fff;
+  box-shadow: 0px 2px 7px 2px rgb(0 0 0 / 15%);
+  display: flex !important;
+  text-transform: none !important;
+  max-width: 11em;
+  font-size: 1rem !important;
+}
+
+.sidebar__composeBtn .MuiSvgIcon-root {
+  font-size: 2rem !important;
+}
+
+.sidebar__options {
+  padding-bottom: 1em;
+  border-bottom: 1px solid #f1f3f4;
+}
+
+.sidebar__meeting > h4 {
+  padding: 0.5em;
+  padding-left: 1.2rem;
+}
+
+@media (max-width: 50em) {
+  .sidebar {
+    flex-basis: auto;
+  }
+  .sidebar__composeTitle {
+    display: none !important;
+  }
+  .MuiButton-root {
+    width: 40px;
+    height: 40px;
+    min-width: auto !important;
+  }
+
+  .sidebar__options,
+  .sidebar__meeting {
+    margin-left: 1.1em;
+  }
+  .sidebar__meeting > h4 {
+    padding-left: 0;
+    display: none;
+  }
+}
