@@ -68,7 +68,43 @@
   display: none !important;
 }
 
+.searchbar__input {
+  display: none;
+}
+
+.header.active .searchbar__input {
+  display: block;
+}
+
+.header.active .header__left,
+.header.active .MuiAvatar-root,
+.header.active .header__rightIcons > button:not(:first-of-type) {
+  display: none !important;
+}
+
+.header.active .header__right,
+.header.active .header__rightIcons {
+  flex: 1;
+}
+
+.searchbar__input {
+  flex: 1;
+}
+
+.searchbar__input > input {
+  width: 100%;
+  padding: 0.7em;
+  font-family: inherit;
+  font-size: 1rem;
+  background-color: #f1f3f4;
+  border: none;
+  outline: none;
+}
+
 @media (max-width: 35em) {
+  .header__left > img {
+    height: 2.1em;
+  }
   .header__search {
     background-color: transparent;
     display: none;
@@ -88,15 +124,19 @@
 }
 
 @media (max-width: 20em) {
-  .header__rightIcons .MuiIconButton-root:nth-child(1) {
-    display: none;
+  .header__rightIcons > button:nth-child(3) {
+    display: none !important;
   }
 }
 
 @media (max-width: 17em) {
-  .header__rightIcons .MuiIconButton-root:nth-child(2) {
-    display: none;
+  .header__rightIcons > button:nth-child(4) {
+    display: none !important;
   }
 }
 
-/* -------------------------------------------------------------------------- */
+@media (max-width: 35em) {
+  .searchIcon {
+    display: flex !important;
+  }
+}

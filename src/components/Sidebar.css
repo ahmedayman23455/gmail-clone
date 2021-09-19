@@ -47,7 +47,7 @@
   .sidebar__composeTitle {
     display: none !important;
   }
-  .MuiButton-root {
+  .sidebar .MuiButton-root {
     width: 40px;
     height: 40px;
     min-width: auto !important;

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
@@ -16,6 +16,7 @@ import { useDispatch } from 'react-redux';
 const Header = () => {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
+  const [searchBarActive, setSearchBarActive] = useState(false);
 
   const logoutHandler = () => {
     auth
@@ -27,7 +28,7 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <div className={`header ${searchBarActive && 'active'}`}>
       <div className="header__left">
         <IconButton>
           <MenuIcon />
@@ -51,9 +52,18 @@ const Header = () => {
 
       <div className="header__right">
         <div className="header__rightIcons">
-          <IconButton className="searchIcon">
+          <div className="searchbar__input">
+            <input type="text" placeholder="Search mail" />
+          </div>
+          <IconButton
+            className="searchIcon"
+            onClick={() => {
+              setSearchBarActive((prevState) => !prevState);
+            }}
+          >
             <SearchIcon />
           </IconButton>
+
           <IconButton>
             <HelpOutlineIcon />
           </IconButton>

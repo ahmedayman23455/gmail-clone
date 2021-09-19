@@ -8,6 +8,7 @@ const MailContent = ({ to, subject, message, time }) => {
       <div className="mailContent__header">
         <div className="mailContent__headerLeft">
           <h2>{subject}</h2>
+          <div className="mailContent__email"></div>
           <DoubleArrowOutlinedIcon />
           <p> {to}</p>
         </div>

@@ -1,6 +1,7 @@
 .mail {
   margin-left: 2em;
   flex: 1;
+  /* overflow: auto; */
 }
 .mail__icons {
   position: sticky;
@@ -20,4 +21,10 @@
 
 .mail__content {
   /* margin-top: 1.5em; */
+}
+
+@media (max-width: 35em) {
+  .mail__iconsRight {
+    display: none;
+  }
 }
